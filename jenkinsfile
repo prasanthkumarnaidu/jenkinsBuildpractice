@@ -1,0 +1,8 @@
+node('UBUNTU'){
+    stage(GIT){
+        git 'https://github.com/prasanthkumarnaidu/jenkinsBuildpractice.git'
+    }
+    stage('package'){
+        sh 'mvn package'
+    }
+}

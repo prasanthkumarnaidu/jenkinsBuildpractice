@@ -1,5 +1,5 @@
 node('UBUNTU'){
-    stage(GIT){
+    stage('GIT'){
         git 'https://github.com/prasanthkumarnaidu/jenkinsBuildpractice.git'
     }
     stage('package'){

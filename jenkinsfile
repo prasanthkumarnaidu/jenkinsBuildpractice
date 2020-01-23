@@ -3,6 +3,6 @@ node('UBUNTU'){
         git 'https://github.com/prasanthkumarnaidu/jenkinsBuildpractice.git'
     }
     stage('package'){
-        sh 'mvn package'
+        sh label: '', script: 'mvn package'
     }
 }
